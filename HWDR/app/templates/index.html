@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handwritten Digit Recognition</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <script defer src="{{ url_for('static', filename='script.js') }}"></script>
+</head>
+<body>
+    <h1>Handwritten Digit Recognition using Transfer Learning</h1>
+    <div class="container">
+        <h1>Digit Classifier</h1>
+        <form id="upload-form" enctype="multipart/form-data">
+            <input type="file" id="file-input" accept=".png, .jpg, .jpeg">
+            <button type="button" onclick="predict()">Predict</button>
+        </form>
+        <div id="prediction-container"></div>
+    </div>
+    <div class="made-by">
+        <p>Made By: </p>
+        <p class="author">L RISHIK REDDY</p>
+    </div>
+    
+</body>
+</html>
